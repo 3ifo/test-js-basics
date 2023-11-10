@@ -1,6 +1,6 @@
 // Esercizio 1//
 
-function analizzaTesto(stringa) {
+/*function analizzaTesto(stringa) {
   const object = {};
   object.originale = stringa;
   object.minuscolo = stringa.toLowerCase();
@@ -14,4 +14,41 @@ function analizzaTesto(stringa) {
   console.log(object);
 }
 
-analizzaTesto(" Javascript è fantastico ");
+analizzaTesto(" Javascript è fantastico ");*/
+
+// Esercizio 2 //
+/*function riempiArray(numeroElementi, valoreMinimo, valoreMassimo) {
+  let arrayCasuale = [];
+  for (let i = 0; i < numeroElementi; i++) {
+    let numeroRandomico =
+      Math.floor(Math.random() * (valoreMassimo - valoreMinimo + 1)) +
+      valoreMinimo;
+    arrayCasuale.push(numeroRandomico);
+  }
+  return arrayCasuale;
+}
+
+function contaPariDispari(array) {
+  let pari = 0;
+  let dispari = 0;
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) {
+      pari++;
+    } else {
+      dispari++;
+    }
+  }
+  return {
+    pari: pari,
+    dispari: dispari,
+  };
+}
+
+let arrayCasuale = riempiArray(10, 2, 50);
+console.log(arrayCasuale);
+
+let conteggio = contaPariDispari(arrayCasuale);
+console.log(conteggio); */
+
+//Esercizio 3 //
