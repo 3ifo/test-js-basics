@@ -52,3 +52,18 @@ let conteggio = contaPariDispari(arrayCasuale);
 console.log(conteggio); */
 
 //Esercizio 3 //
+
+window.addEventListener("load", function () {
+  let button = document.getElementById("bottoneInvio");
+
+  button.addEventListener("click", function () {
+    let input = document.getElementById("testoUtente");
+    let valoreInput = input.value;
+    let pCreato = document.createElement("p");
+    pCreato.innerText = valoreInput;
+    document.body.appendChild(pCreato);
+    if (valoreInput === "") {
+      alert("Inserisci del testo prima di inviare");
+    }
+  });
+});
